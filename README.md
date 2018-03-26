@@ -2,6 +2,7 @@
 Collection of research on Gutenberg Blocks
 
 ## Screenshots
+### Editor View
 ![Backend](inc/images/sample-blocks-backend.png)
-Frontend:
+### Frontend Display
 ![Frontend view of editor](inc/images/sample-blocks-frontend.png "Frontend view of editor")
