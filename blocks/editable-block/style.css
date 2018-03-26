@@ -1,0 +1,22 @@
+/**
+ * ----------------------------------------------------------------------------
+ * #.# Frontend CSS
+ *
+ * BLOCK: Editable Block CSS for the front end.
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-pmb-editable-block {
+	color: #000000;
+	background: azure;
+	border: 0.2rem solid midnightblue;
+	padding: 2rem;
+}
+
+
+.wp-block-pmb-editable-block {
+	color: #2997c8;
+	background: #f0fef6;
+	border: 0.2rem solid goldenrod;
+	padding: 2rem;
+}

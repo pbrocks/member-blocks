@@ -1,0 +1,30 @@
+div.edit-post-meta-boxes-area__container:nth-child(1):before {
+	content: 'Metaboxes';
+	font-size: 2rem;
+	margin-left: -1rem;
+}
+div.edit-post-meta-boxes-area__container:nth-child(1) > form {
+	padding: 1rem 0;
+}
+.dashicons-welcome-view-site:before {
+	content: url('../images/sidetrack20.png');
+	padding-right: 1rem;
+}
+
+.cssgrid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  color: #444;
+  padding: 1rem;
+}
+
+.grid-element {
+  background-color: aliceblue;
+  color: #002959;
+  font-size: 1rem;
+  padding: 2rem;
+  outline: 2px solid #002959;
+  border-radius: 1rem;
+}
+

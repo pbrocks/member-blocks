@@ -1,0 +1,117 @@
+/**
+ * #.# Styles for Team Member Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.pmb-member {
+	.member-image {
+		width: 300px;
+	    height: 300px;
+	    background-size: cover;
+	    background-position: center;
+		margin: 0 auto 1.3rem;
+	}
+	&.image-circle .member-image {
+		border-radius: 100%;
+	}
+	&.column-2 {
+		.member-image {
+			width: 220px;
+		    height: 220px;
+		}
+	}
+	&.column-3 {
+		.member-image {
+			width: 150px;
+		    height: 150px;
+		}
+	}
+	> div {
+		text-align: center;
+		padding: 1rem 0;
+		p {
+			text-align: center;
+		}
+	}
+	h4 {
+		margin: 0 0 .5rem !important;
+	}
+	.pmb-member-position {
+		margin: 0 0 1rem;
+	}
+}
+ .pmb-member {
+	 .pmb-member-title {
+	 }
+	 .pmb-member-position {
+		 opacity: .3;
+		 font-size: .75em;
+		 text-transform: uppercase;
+	 }
+	 .pmb-member-des,
+	 .pmb-member-des-two,
+	 .pmb-member-des-three {
+		 opacity: .5;
+		 margin: 0 0 1rem;
+		 left: 0;
+	 }
+ }
+
+.pmb-member.column-1 {
+	.pmb-member-column-two,
+	.pmb-member-column-three {
+		display: none;
+	}
+}
+.pmb-member.column-2 {
+	display: flex;
+	.pmb-member-column-one {
+		padding-right: 1rem;
+	}
+	.pmb-member-column-two {
+		padding-left: 1rem;
+	}
+	.pmb-member-column-one,
+	.pmb-member-column-two {
+		width: 50%;
+	}
+	.pmb-member-column-three {
+		display: none;
+	}
+	.member-image img {
+		height: 200px;
+		width: 250px
+	}
+}
+.pmb-member.column-3 {
+	display: flex;
+	.pmb-member-column-one,
+	.pmb-member-column-two,
+	.pmb-member-column-three {
+		width: 33.33%;
+	}
+	.pmb-member-column-one {
+		padding-right: 1rem;
+	}
+	.pmb-member-column-two {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.pmb-member-column-three {
+		padding-left: 1rem;
+	}
+	.member-image img {
+		height: 200px;
+		width: 200px
+	}
+}
+
+.member-social a {
+	color: #000000;
+	opacity: .30;
+	padding: 0 3px;
+}
+/**
+ * Frontend Styles.
+ */
+.wp-block-pmb-member {}

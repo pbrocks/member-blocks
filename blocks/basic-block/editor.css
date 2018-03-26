@@ -1,0 +1,14 @@
+/**
+ * ----------------------------------------------------------------------------
+ * #.# Editor CSS
+ *
+ * BLOCK: Basic Block CSS for the editor.
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-pmb-basic-block {
+	color: #77a02e;
+	background: aliceblue;
+	border: 0.2rem solid salmon;
+	padding: 2rem;
+}

@@ -1,0 +1,14 @@
+/**
+ * ----------------------------------------------------------------------------
+ * #.# Frontend CSS
+ *
+ * BLOCK: Basic Block CSS for the front end.
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-pmb-basic-block {
+	color: #2997c8;
+	background: #f0fef6;
+	border: 0.2rem solid goldenrod;
+	padding: 2rem;
+}

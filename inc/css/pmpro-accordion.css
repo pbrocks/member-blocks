@@ -1,0 +1,67 @@
+
+/* Accordion styles */
+.tab.accordion {
+  position: relative;
+  margin-bottom: 1px;
+  width: 70%;
+  color: #fff;
+  overflow: hidden;
+}
+input.accordion {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label.accordion {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1rem;
+  padding: 0;
+  background: #2997c8;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #1abc9c;
+  -webkit-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+.tab.accordion .tab-content p {
+  margin: 1rem 2rem;
+}
+/* :checked */
+input.accordion:checked ~ .tab-content {
+  max-height: 122rem;
+}
+/* Icon */
+label.accordion::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+input.accordion[type=checkbox] + label.accordion::after {
+  content: "+";
+}
+input.accordion[type=radio] + label.accordion::after {
+  content: "\25BC";
+}
+input.accordion[type=checkbox]:checked + label.accordion::after {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+input.accordion[type=radio]:checked + label.accordion::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}

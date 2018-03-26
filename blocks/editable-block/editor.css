@@ -1,0 +1,14 @@
+/**
+ * ----------------------------------------------------------------------------
+ * #.# Editor CSS
+ *
+ * BLOCK: Editable Block CSS for the for the editor.
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-pmb-editable-block {
+	color: #000000;
+	background: azure;
+	border: 0.2rem solid midnightblue;
+	padding: 2rem;
+}
