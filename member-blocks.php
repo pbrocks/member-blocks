@@ -55,8 +55,7 @@ function uninstall_pmpro_member_blocks() {
 require_once( PMB_DIR . '/classes/class-admin-dev-menus.php' );
 
 /**
-
-Admin_Dev_Menus
+ * Admin_Dev_Menus
  */
 require_once( PMB_DIR . '/classes/class-admin-notification.php' );
 
