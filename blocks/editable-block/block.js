@@ -18,7 +18,7 @@
 	 *                             otherwise "undefined".
 	 */
 	registerBlockType(
-		'pmb/editable-block', // Block name. Must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
+		'pmpro-member-blocks/editable-block', // Block name. Must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 		{
 			title: __( 'PMB Editable' ), // Block title. __() function allows for internationalization.
 			icon: 'edit', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.

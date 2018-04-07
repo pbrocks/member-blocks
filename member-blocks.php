@@ -5,7 +5,7 @@
  * Description: PMPro Research building off FOSS Gutenberg Boilerplate.
  * Author: pbrocks
  * Author URI: https://pbrocks.com/
- * Version: 1.0.2
+ * Version: 1.0.2a
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -39,12 +39,12 @@ if ( ! defined( 'PMB_URL' ) ) {
 	define( 'PMB_URL', WP_PLUGIN_URL . '/' . PMB_NAME );
 }
 
-register_activation_hook( __FILE__, 'install_pmpro_member_blocks' );
+// register_activation_hook( __FILE__, 'install_pmpro_member_blocks' );
 function install_pmpro_member_blocks() {
 	set_transient( 'pmpro_member_blocks_activated', true, 30 );
 }
 
-register_deactivation_hook( __FILE__, 'uninstall_pmpro_member_blocks' );
+// register_deactivation_hook( __FILE__, 'uninstall_pmpro_member_blocks' );
 function uninstall_pmpro_member_blocks() {
 	delete_transient( 'pmpro_member_blocks_activated' );
 }
@@ -63,17 +63,24 @@ require_once( PMB_DIR . '/classes/class-admin-notification.php' );
 /**
  * CLASS: PMPro_Member_Blocks_Welcome.
  */
-require_once( PMB_DIR . '/classes/class-pmpro-member-blocks-welcome.php' );
-
+// require_once( PMB_DIR . '/classes/class-pmpro-member-blocks-welcome.php' );
 /**
  * CLASS: PMPro_Member_Blocks_Setup.
  */
 require_once( PMB_DIR . '/classes/class-pmpro-member-blocks-setup.php' );
 
 /**
+ * BLOCK: PMB Static Block.
+ */
+require_once( PMB_DIR . '/blocks/static/index.php' );
+/**
  * BLOCK: PMB Basic Block.
  */
 require_once( PMB_DIR . '/blocks/basic-block/index.php' );
+/**
+ * BLOCK: PMB Toolbar.
+ */
+require_once( PMB_DIR . '/blocks/pmb-toolbar/index.php' );
 
 /**
  * BLOCK: PMB Editable.
@@ -82,7 +89,7 @@ require_once( PMB_DIR . '/blocks/editable-block/index.php' );
 /**
  * BLOCK: PMB Dynamic Block.
  */
-require_once( PMB_DIR . '/unconnected/basic-block/index.php' );
+// require_once( PMB_DIR . '/unconnected/basic-block/index.php' );
 /**
  * BLOCK: PMB Basic Block.
  */

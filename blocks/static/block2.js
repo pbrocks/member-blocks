@@ -1,5 +1,5 @@
 /**
- * BLOCK: PMB Basic
+ * BLOCK: PMB Static
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -14,7 +14,7 @@
 	var registerBlockType = wp.blocks.registerBlockType; // The registerBlockType() to register blocks.
 
 	/**
-	 * Register Basic Block.
+	 * Register Static Block.
 	 *
 	 * Registers a new block provided a unique name and an object defining its
 	 * behavior. Once registered, the block is made available as an option to any
@@ -25,8 +25,8 @@
 	 * @return {?WPBlock}          The block, if it has been successfully
 	 *                             registered; otherwise `undefined`.
 	 */
-	registerBlockType( 'pmpro-member-blocks/basic-block', { // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-		title: __( 'PMB Basic' ), // Block title.
+	registerBlockType( 'pmpro-member-blocks/static', { // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
+		title: __( 'PMB Static' ), // Block title.
 		icon: 'screenoptions', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 		category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 
@@ -36,7 +36,7 @@
 			return el(
 				'p', // Tag type.
 				{ className: props.className }, // The class="wp-block-gb-basic-block" : The class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
-				'Hello PMPro! — Editor display of the Basic Block.' // Content inside the tag.
+				'Hello PMPro! — Editor display of the Static Block.' // Content inside the tag.
 			);
 		},
 
@@ -45,7 +45,7 @@
 			return el(
 				'p', // Tag type.
 				{ className: props.className }, // The class="wp-block-gb-basic-block" : The class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
-				'Hello PMPro! — Frontend view Basic Block.' // Content inside the tag.
+				'Hello PMPro! — Frontend view Static Block.' // Content inside the tag.
 			);
 		},
 	} );
