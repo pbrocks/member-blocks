@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: PMPro Member Blocks
+ * Plugin Name: PMPro Member Blocks pbrox
  * Plugin URI: https://github.com/pbrocks/pmpro-member-blocks
  * Description: PMPro Research building off FOSS Gutenberg Boilerplate.
  * Author: pbrocks
@@ -78,10 +78,16 @@ require_once( PMB_DIR . '/blocks/basic-block/index.php' );
  * BLOCK: PMB Editable.
  */
 require_once( PMB_DIR . '/blocks/editable-block/index.php' );
+
+/**
+ * BLOCK: PMB Attributes.
+ */
+// require_once( PMB_DIR . '/blocks/attrib-block/index.php' );
+
 /**
  * BLOCK: PMB Dynamic Block.
  */
-require_once( PMB_DIR . '/unconnected/basic-block/index.php' );
+// require_once( PMB_DIR . '/unconnected/basic-block/index.php' );
 /**
  * BLOCK: PMB Basic Block.
  */

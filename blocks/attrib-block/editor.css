@@ -1,0 +1,14 @@
+/**
+ * ----------------------------------------------------------------------------
+ * #.# Editor CSS
+ *
+ * BLOCK: Editable Block CSS for the for the editor.
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-pmb-attrib-block {
+	color: #002959;
+	background: teal;
+	border: 0.2rem solid salmon;
+	padding: 2rem;
+}
